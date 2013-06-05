@@ -550,9 +550,14 @@ html {
   padding: 40px;
 }
 polygon {
-  -moz-transform-origin: 300px;
-  -webkit-transform-origin: 300px;
-  -o-transform-origin: 300px;
-  -ms-transform-origin: 300px;
-  transform-origin: 300px;
+  -moz-transform: scale(1.9);
+  -webkit-transform: scale(1.9);
+  -o-transform: scale(1.9);
+  -ms-transform: scale(1.9);
+  transform: scale(1.9);
+  -moz-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
 }
