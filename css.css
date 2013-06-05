@@ -89,7 +89,7 @@ td {
 a img {
   border: none;
 }
-html {
+svg {
   padding: 40px;
 }
 polygon {
@@ -98,11 +98,12 @@ polygon {
   -o-transform-origin: 300px;
   -ms-transform-origin: 300px;
   transform-origin: 300px;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
+  border-right: 4px solid #00f;
 }
 polygon:hover {
   -webkit-transform: scale(1.1);
@@ -111,9 +112,9 @@ polygon:hover {
   -ms-transform: scale(1.1);
   transform: scale(1.1);
   stroke: #00f;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
 }
