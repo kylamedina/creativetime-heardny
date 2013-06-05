@@ -1,0 +1,13 @@
+{
+  "name": "Tranzact",
+  "version": "1.0.0",
+  "main": "/wp-content/themes/tranzact/css/main.css",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "headjs": "*"
+  , ".ignore": "git://gist.github.com/5059919.git"
+  }
+}
