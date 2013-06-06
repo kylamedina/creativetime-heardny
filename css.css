@@ -434,7 +434,7 @@ code {
   }
 }
 body {
-  width: 5000px;
+  width: 4000px;
 }
 .grid span {
   display: inline;
@@ -449,6 +449,28 @@ svg,
 span img {
   width: auto;
   height: 600px;
+  padding: 2rem 0 0 2rem;
+}
+span#I {
+  width: 5%;
+}
+span#hash {
+  width: 12%;
+}
+span#H {
+  width: 12%;
+}
+span#E {
+  width: 11%;
+}
+span#A {
+  width: 13.5%;
+}
+span#R {
+  width: 12%;
+}
+span#D {
+  width: 12%;
 }
 .nav {
   width: 100%;
