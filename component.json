@@ -9,5 +9,6 @@
   "dependencies": {
     "headjs": "*"
   , ".ignore": "git://gist.github.com/5059919.git"
+  , "Lettering": "git://github.com/davatron5000/Lettering.js.git"
   }
 }

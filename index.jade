@@ -7,16 +7,57 @@ html
 		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1')
 		script(type="text/javascript",src="assets/js/head.min.js")
 	body
-		include includes/hash
+		.grid
+			span
+				include includes/hash
+				//img(src="svg/letter_hash.svg", alt="")
+			span
+				include includes/letterI
+				//img(src="svg/letter_I.svg", alt="")
+			
+			span
+				include includes/letterH
+			
+			span
+				include includes/letterE
+			
+			span
+				include includes/letterA
 
+			span
+				include includes/letterR
+
+			span
+				include includes/letterD
+
+			span
+				include includes/letterN
+
+			span
+				include includes/letterY
+
+
+		.nav
+			.wrapper
+				.arrow.left
+				nav
+					ul
+						li #
+						li.active I
+						li h
+						li e
+						li a
+						li r
+						li d
+						li n
+						li y
+				.arrow.right
 	script
 		head.js(
 		{jQuery: "http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
 		, {custom: "assets/js/js.js"}
 		, {transit: "assets/js/jquery.transit.js"}
-		//, {svg: "assets/js/svg.js"}
 		, function() {
-
-			console.log("Head JS Finished")
+			console.log("Head JS Finished");
 			
 		});

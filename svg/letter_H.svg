@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="762px" height="1164.5px" viewBox="0 0 762 1164.5" enable-background="new 0 0 762 1164.5" xml:space="preserve">
+<g id="h">
+	<polygon fill="none" stroke="#DF366D" stroke-width="2" stroke-miterlimit="10" points="1,1 240.5,1 241.833,445 519.5,445 
+		519.5,1 761,1 761,1163.5 520,1163.5 519.5,646.5 241.322,646.5 241.833,1161 1,1161 	"/>
+	<rect x="0.5" y="1" fill="none" width="239.5" height="235.5"/>
+	<polygon fill="none" points="240,236.5 241.333,340.833 0.5,340.833 0.5,236.5 	"/>
+	<polyline fill="none" points="241.333,342.166 241.333,497.832 0.5,497.832 0.5,340.833 241.333,340.833 	"/>
+	<polygon fill="none" points="0.5,497.832 240.333,497.832 241.333,802.166 0.5,800.833 	"/>
+	<polygon fill="none" points="0.5,953.5 0.5,800.833 241.333,802.166 241.333,953.5 	"/>
+	<path fill="none" stroke="#DF366D" stroke-width="2" stroke-miterlimit="10" d="M0.5,1161"/>
+	<rect x="0.5" y="953.5" fill="none" width="240.833" height="207.5"/>
+	<polygon fill="none" points="241.333,445 519.5,445 519.5,646.5 240.822,646.5 	"/>
+	<rect x="519" y="1" fill="none" width="241.5" height="183"/>
+	<polygon fill="none" points="760.5,184 760.5,419.333 519.5,419.333 519,184 	"/>
+	<polygon fill="none" points="760.5,419.333 760.5,654.5 519,654.5 519.5,419.5 	"/>
+	<polygon fill="none" points="760.5,654.5 760.5,746.5 519.5,746.5 519,654.5 	"/>
+	<rect x="519.5" y="746.5" fill="none" width="241" height="217.5"/>
+	<rect x="519.5" y="964" fill="none" width="241" height="199.5"/>
+</g>
+</svg>

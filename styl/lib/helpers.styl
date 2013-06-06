@@ -154,12 +154,12 @@ literal-join(string, literals)
 
 /*
  * Background mixin
- * e.g. bg: 'logo.png' (with specified img-path in 'settings')
+ * e.g. bg: 'logo.png' (with specified imgPath in 'settings')
  * e.g. bg: '../img/logo.png' 100px 50px
  */
 bg(path, args...)
 	args = unquote('no-repeat') unless args
-	background: url(img-path path) args
+	background: url(imgPath path) args
 
 /*
  * Background mixin for retina displays
@@ -178,7 +178,7 @@ bg-retina(path, args...)
  * e.g. image-block: 'test.jpg' 300 200
  */
 image-block(path, dimensions...)
-	url = img-path + path
+	url = imgPath + path
 
 	bg(path) if path
 	font: 0/0 a

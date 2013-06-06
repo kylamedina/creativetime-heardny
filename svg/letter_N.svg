@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="792.676px" height="1163.338px" viewBox="0 0 792.676 1163.338" enable-background="new 0 0 792.676 1163.338"
+	 xml:space="preserve">
+<g id="n">
+	<polygon fill="none" stroke="#DF366D" stroke-width="2.0099" stroke-miterlimit="10" points="1.005,1162.333 1.005,1.005 
+	279.005,1.005 571.671,793.003 571.671,1.005 791.671,1.005 791.671,1162.333 518.338,1162.333 223.671,348.338 223.671,1162.333 	
+		"/>
+	<rect x="1.005" y="978.333" fill="none" width="222.667" height="184"/>
+	<rect x="1.005" y="718.333" fill="none" width="222.667" height="260"/>
+	<rect x="1.005" y="499.002" fill="none" width="222.667" height="219.331"/>
+	<rect x="1.005" y="206.337" fill="none" width="222.667" height="292.665"/>
+	<polyline fill="none" points="353.671,206.337 438.338,435.005 254.338,435.005 223.671,348.338 223.671,206.337 353.671,206.337 
+		279.005,1.005 1.005,1.005 1.005,206.337 	"/>
+	<polygon fill="none" points="254.338,435.005 438.338,435.005 526.338,678.338 342.338,678.338 	"/>
+	<polygon fill="none" points="526.338,678.338 569.005,793.003 385.338,793.003 342.338,678.338 	"/>
+	<polygon fill="none" points="385.338,793.003 571.671,793.003 571.671,940.336 439.108,940.336 	"/>
+	<polygon fill="none" points="438.338,940.336 791.671,940.336 791.671,1162.333 518.338,1162.333 	"/>
+	<rect x="571.671" y="735.67" fill="none" width="220" height="204.666"/>
+	<rect x="571.671" y="529.669" fill="none" width="220" height="206.001"/>
+	<rect x="571.671" y="345.669" fill="none" width="220" height="184"/>
+	<rect x="571.671" y="275.003" fill="none" width="220" height="70.666"/>
+	<rect x="571.671" y="1.005" fill="none" width="220" height="273.998"/>
+</g>
+</svg>
