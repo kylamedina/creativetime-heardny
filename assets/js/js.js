@@ -15,7 +15,7 @@ jQuery(document).ready(function(){
 		return points;
 	}
 
-	jQuery('body svg').find('polygon[fill*="url"], rect[fill*="url"]').each(function(){
+	jQuery('body svg').find('polygon[fill*="url"], rect[fill*="url"], path[fill*="url"], .hover').each(function(){
 
 
 		jQuery(this).hover(
