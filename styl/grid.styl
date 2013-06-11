@@ -13,10 +13,10 @@ row(colNum = colNum)
 	*width total-width * ((gutter-width + _gridsystem-width ) / _gridsystem-width)-correction
 	*margin 0 total-width * (((gutter-width * 0.5) / _gridsystem-width ) * - 1)-correction
 	clearfix()
-col(x = 9, colNum = colNum)
+col(x = 10, colNum = colNum)
 	display inline
 	float left
-	overflow hidden
+	//overflow hidden
 	width total-width * ((((gutter-width + column-width ) * x) - gutter-width) / _gridsystem-width)
 	margin 0 total-width * ( (gutter-width * 0.5) / _gridsystem-width)
 	*width total-width * ((((gutter-width + column-width ) * x) - gutter-width) / _gridsystem-width)-correction
