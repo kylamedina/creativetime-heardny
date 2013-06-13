@@ -4,8 +4,8 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="825.01px" height="1161.843px" viewBox="0 0 825.01 1161.843" enable-background="new 0 0 825.01 1161.843"
 	 xml:space="preserve">
-<g id="hash">
-	<g id="FJVU7J_1_">
+<g id="HASH">
+	<g id="hash1">
 		
 			<image overflow="visible" width="195" height="203" id="FJVU7J_2_" xlink:href="B88725F9B4605F37.jpg"  transform="matrix(1 0 0 1 481.3389 480.0049)">
 		</image>
@@ -23,12 +23,12 @@
 			</g>
 		</g>
 	</g>
-	<g id="_x30_LqJsP_1_">
+	<g id="hash2">
 		
 			<image overflow="visible" width="376" height="187" id="_x30_LqJsP_2_" xlink:href="B88725F9B4605F3B.jpg"  transform="matrix(1 0 0 1 448.0049 292.0049)">
 		</image>
 	</g>
-	<g>
+	<g id="hash3">
 		<defs>
 			<polyline id="SVGID_85_" points="127.172,870.505 293.839,870.505 277.839,992.838 111.839,992.838 			"/>
 		</defs>
@@ -41,7 +41,7 @@
 			</image>
 		</g>
 	</g>
-	<g>
+	<g id="hash4">
 		<defs>
 			<polyline id="SVGID_87_" points="443.839,985.755 458.255,870.005 627.172,870.005 612.087,985.755 			"/>
 		</defs>
@@ -54,7 +54,7 @@
 			</image>
 		</g>
 	</g>
-	<g>
+	<g id="hash5">
 		<defs>
 			<polyline id="SVGID_89_" points="344.005,478.505 316.506,680.005 149.172,680.005 176.755,478.505 			"/>
 		</defs>
@@ -67,7 +67,7 @@
 			</image>
 		</g>
 	</g>
-	<g>
+	<g id="hash6">
 		<defs>
 			<polyline id="SVGID_91_" points="611.839,985.755 589.172,1160.838 421.839,1160.838 443.839,985.505 			"/>
 		</defs>
@@ -80,7 +80,7 @@
 			</image>
 		</g>
 	</g>
-	<g>
+	<g id="hash7">
 		<defs>
 			<rect id="SVGID_93_" x="343.838" y="679.841" width="223.417" height="190.914"/>
 		</defs>
@@ -98,17 +98,17 @@
 			</g>
 		</g>
 	</g>
-	<g id="wk3Efv_1_">
+	<g id="hash8">
 		
 			<image overflow="visible" width="187" height="187" id="wk3Efv_2_" xlink:href="AB887D1711EDC2F4.jpg"  transform="matrix(1 0 0 1 52.9463 292.0049)">
 		</image>
 	</g>
-	<g id="_x30_Z9yHE_1_">
+	<g id="hash">
 		
 			<image overflow="visible" width="206" height="187" id="_x30_Z9yHE_2_" xlink:href="AB887D1711EDC2F3.jpg"  transform="matrix(1.0218 0 0 1.0187 565.0049 680.0049)">
 		</image>
 	</g>
-	<g>
+	<g id="hash9">
 		<defs>
 			<polyline id="SVGID_95_" points="214.505,173.755 382.255,173.755 367.005,292.005 200.255,292.005 			"/>
 		</defs>
@@ -121,7 +121,7 @@
 			</image>
 		</g>
 	</g>
-	<g>
+	<g id="hash10">
 		<defs>
 			<polyline id="SVGID_97_" points="550.171,145.505 718.171,145.505 699.505,292.005 531.171,292.005 			"/>
 		</defs>
@@ -134,7 +134,7 @@
 			</image>
 		</g>
 	</g>
-	<g id="_x30_TG08e_1_">
+	<g id="hash11">
 		
 			<image overflow="visible" width="207" height="187" id="_x30_TG08e_2_" xlink:href="AB887D1711EDC30D.jpg"  transform="matrix(1 0 0 1 240.9209 292.0049)">
 		</image>
@@ -144,7 +144,7 @@
 			</image>
 		</g>
 	</g>
-	<g>
+	<g id="hash12">
 		<defs>
 			<polygon id="SVGID_99_" points="236.505,1.005 403.255,1.005 382.255,173.755 214.505,173.755 			"/>
 		</defs>
@@ -157,7 +157,7 @@
 			</image>
 		</g>
 	</g>
-	<g>
+	<g id="hash13">
 		<defs>
 			<polyline id="SVGID_101_" points="568.855,0.755 550.037,145.755 717.9,145.505 737.505,0.755 			"/>
 		</defs>
@@ -170,7 +170,7 @@
 			</image>
 		</g>
 	</g>
-	<g id="_x23_">
+	<g id="hash">
 		<polygon fill="none" stroke="#DF366D" stroke-width="2.0099" stroke-miterlimit="10" points="236.505,1.005 403.255,1.005 
 			367.005,291.005 531.171,291.005 568.838,1.005 736.505,1.005 699.505,291.005 824.005,291.005 824.005,480.005 676.506,480.005 
 			648.506,680.005 775.505,680.005 775.505,870.505 627.172,870.505 589.172,1160.838 421.839,1160.838 458.506,870.505 

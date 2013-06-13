@@ -444,18 +444,17 @@ body,
 }
 body .creativetime,
 .frame .creativetime {
-  width: 5000px;
+  width: 6000px;
   height: 100%;
   position: relative;
-  margin: 40px 0;
 }
 body embed,
 .frame embed,
 body object,
 .frame object {
   width: 100%;
-  height: 600px;
-  padding: 3rem 0 0 2rem;
+  height: 100%;
+  max-height: 700px;
   vertical-align: top;
 }
 body embed g,
@@ -482,7 +481,7 @@ body .nav,
 .frame .nav {
   width: 100%;
   background: #fff;
-  position: fixed;
+  margin-top: 20px;
   height: 70px;
   bottom: 0;
   display: block;
@@ -497,8 +496,7 @@ body .nav:after,
 }
 body .nav .wrapper,
 .frame .nav .wrapper {
-  margin-left: 50px;
-  margin-top: 20px;
+  margin: 20px 30px;
   width: 900px;
   position: fixed;
 }
@@ -506,6 +504,7 @@ body .nav .wrapper,
   width: 960px;
   height: 540px;
   overflow-x: scroll;
+  overflow-y: hidden;
 }
 .frame2 .creativetime {
   width: 3400px;
@@ -516,7 +515,7 @@ body .nav .wrapper,
 .frame2 object {
   width: 100%;
   height: 400px;
-  padding: 3rem 0 0 2rem;
+  margin-top: 40px;
   vertical-align: top;
 }
 .frame2 embed g,
@@ -551,10 +550,8 @@ body .nav .wrapper,
   visibility: hidden;
 }
 .frame2 .nav .wrapper {
-  margin-left: 50px;
-  margin-top: 20px;
+  margin: 20px 30px;
   width: 900px;
-  position: fixed;
 }
 .grid {
   display: block;
@@ -573,6 +570,9 @@ body .nav .wrapper,
   margin: 0 0%;
   *width: 9.090909090909092% -correction;
   *margin: 0 0% -correction;
+}
+g image {
+  width: 100%;
 }
 ::-webkit-scrollbar {
   width: 7px;
@@ -600,15 +600,6 @@ span#I {
 }
 span#A {
   width: 10%;
-}
-span#gap {
-  display: inline;
-  float: left;
-  width: 54.54545454545454%;
-  margin: 0 0%;
-  *width: 54.54545454545454% -correction;
-  *margin: 0 0% -correction;
-  height: 600px;
 }
 span svg {
   margin: 0 auto;

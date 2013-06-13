@@ -6,7 +6,7 @@
 	 xml:space="preserve">
 <rect x="-192" y="-23.486" display="none" fill="#8E8E8E" width="1200" height="1209"/>
 <g id="Y">
-	<g>
+	<g id="Y1">
 		<defs>
 			<polyline id="SVGID_1_" points="627.334,532.514 433.5,531.764 432.683,705.038 550.583,705.038 			"/>
 		</defs>
@@ -19,7 +19,7 @@
 			</image>
 		</g>
 	</g>
-	<g>
+	<g id="Y2">
 		<defs>
 			<polyline id="SVGID_3_" points="471.5,341.014 431.683,447.809 432.683,532.181 627.334,532.514 710.5,341.014 			"/>
 		</defs>
@@ -32,7 +32,7 @@
 			</image>
 		</g>
 	</g>
-	<g>
+	<g id="Y3">
 		<defs>
 			<polyline id="SVGID_5_" points="524,199.014 772.701,199.514 710.5,341.014 471.5,341.014 			"/>
 		</defs>
@@ -45,7 +45,7 @@
 			</image>
 		</g>
 	</g>
-	<g>
+	<g id="Y4">
 		<defs>
 			<polyline id="SVGID_7_" points="103.584,232.515 353.35,232.515 429.683,449.275 198.072,449.275 			"/>
 		</defs>
@@ -58,7 +58,7 @@
 			</image>
 		</g>
 	</g>
-	<g>
+	<g id="Y5">
 		<defs>
 			<polyline id="SVGID_9_" points="198.584,449.275 432.912,449.275 432.912,704.038 309.924,704.038 			"/>
 		</defs>
@@ -71,7 +71,7 @@
 			</image>
 		</g>
 	</g>
-	<g>
+	<g id="Y6">
 		<defs>
 			<polygon id="SVGID_11_" points="597.174,1.765 857.668,1.765 773.912,197.685 525,197.685 			"/>
 		</defs>
@@ -84,12 +84,12 @@
 			</image>
 		</g>
 	</g>
-	<g id="sudAPA_1_">
+	<g id="Y7">
 		
 			<image overflow="visible" width="241" height="459" id="sudAPA_3_" xlink:href="79CCFE0A81F2107C.jpg"  transform="matrix(1 0 0 1 309.3394 704.5264)">
 		</image>
 	</g>
-	<g>
+	<g id="Y8">
 		<defs>
 			<polygon id="SVGID_13_" points="1.667,2.014 273,2.014 353.667,232.515 101.667,232.515 			"/>
 		</defs>
