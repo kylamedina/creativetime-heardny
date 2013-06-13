@@ -7,51 +7,51 @@ html
 		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1')
 		script(type="text/javascript",src="assets/js/head.min.js")
 	body
-		.grid
-			span#hash
-				include includes/hash
-				//img(src="svg/letter_hash.svg", alt="")
-			span#I
-				include includes/letterI
-				//img(src="svg/letter_I.svg", alt="")
-			
-			span#H
-				include includes/letterH
-			
-			span#E
-				include includes/letterE
-			
-			span#A
-				include includes/letterA
+		.frame
+			.creativetime
+				.grid
+					span#hash
+						object(data="assets/img/hash/hash.svg", type="image/svg+xml")
+					span#I
+						object(data="assets/img/I/letterI.svg", type="image/svg+xml")
+					
+					span#H
+						object(data="assets/img/H/letterH.svg", type="image/svg+xml")
+					
+					span#E
+						object(data="assets/img/E/letterE.svg", type="image/svg+xml")
+					
+					span#A
+						object(data="assets/img/A/letterA.svg", type="image/svg+xml")
 
-			span#R
-				include includes/letterR
+					span#R
+						object(data="assets/img/R/letterR.svg", type="image/svg+xml")
 
-			span#D
-				include includes/letterD
+					span#D
+						object(data="assets/img/D/letterD.svg", type="image/svg+xml")
 
-			span#N
-				include includes/letterN
+					span#N
+						object(data="assets/img/N/letterN.svg", type="image/svg+xml")
 
-			span#Y
-				include includes/letterY
+					span#Y
+						object(data="assets/img/Y/letterY.svg", type="image/svg+xml")
 
 
-		.nav
-			.wrapper
-				.arrow.left
-				nav
-					ul
-						li #
-						li.active I
-						li h
-						li e
-						li a
-						li r
-						li d
-						li n
-						li y
-				.arrow.right
+				.nav
+					.wrapper
+						.arrow.left
+						nav
+							ul
+								li.active #
+								li I
+								li h
+								li e
+								li a
+								li r
+								li d
+								li n
+								li y
+						.arrow.right
 	script
 		head.js(
 		{jQuery: "http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
