@@ -153,7 +153,8 @@ footer:after {
   visibility: hidden;
 }
 img,
-embed {
+embed,
+object {
   width: 100%;
 }
 body {
@@ -434,8 +435,126 @@ code {
     display: none !important;
   }
 }
-body {
+body,
+.frame {
+  width: 960px;
+  height: 100%;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+body .creativetime,
+.frame .creativetime {
   width: 5000px;
+  height: 100%;
+  position: relative;
+  margin: 40px 0;
+}
+body embed,
+.frame embed,
+body object,
+.frame object {
+  width: 100%;
+  height: 600px;
+  padding: 3rem 0 0 2rem;
+  vertical-align: top;
+}
+body embed g,
+.frame embed g,
+body object g,
+.frame object g {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+body embed g:hover,
+.frame embed g:hover,
+body object g:hover,
+.frame object g:hover {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+body .nav,
+.frame .nav {
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  height: 70px;
+  bottom: 0;
+  display: block;
+}
+body .nav:after,
+.frame .nav:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+body .nav .wrapper,
+.frame .nav .wrapper {
+  margin-left: 50px;
+  margin-top: 20px;
+  width: 900px;
+  position: fixed;
+}
+.frame2 {
+  width: 960px;
+  height: 540px;
+  overflow-x: scroll;
+}
+.frame2 .creativetime {
+  width: 3400px;
+  height: 100%;
+  position: relative;
+}
+.frame2 embed,
+.frame2 object {
+  width: 100%;
+  height: 400px;
+  padding: 3rem 0 0 2rem;
+  vertical-align: top;
+}
+.frame2 embed g,
+.frame2 object g {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.frame2 embed g:hover,
+.frame2 object g:hover {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.frame2 .nav {
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  height: 70px;
+  bottom: 0;
+  display: block;
+}
+.frame2 .nav:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.frame2 .nav .wrapper {
+  margin-left: 50px;
+  margin-top: 20px;
+  width: 900px;
+  position: fixed;
 }
 .grid {
   display: block;
@@ -455,25 +574,26 @@ body {
   *width: 9.090909090909092% -correction;
   *margin: 0 0% -correction;
 }
-embed {
-  width: 100%;
-  height: 600px;
-  padding: 3rem 0 0 2rem;
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  cursor: pointer;
 }
-embed g {
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  transition: all 0.3s;
+::-webkit-scrollbar-track {
+  background-color: #ddd;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
 }
-embed g:hover {
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  transition: all 0.3s;
-  stroke: #f0537a;
+::-webkit-scrollbar-thumb {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #c4290d;
 }
 span#I {
   width: 5%;
@@ -492,19 +612,6 @@ span#gap {
 }
 span svg {
   margin: 0 auto;
-}
-.nav {
-  width: 100%;
-  background: #fff;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  padding-bottom: 30px;
-}
-.nav .wrapper {
-  margin-left: 90px;
-  margin-top: 30px;
-  width: 900px;
 }
 nav {
   display: inline-block;
@@ -531,7 +638,12 @@ nav li {
   margin-left: 56px;
 }
 nav li {
-  border: 2px solid #fff;
+  border: 2px solid transparent;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
   text-align: center;
   line-height: 1.3;
 }
