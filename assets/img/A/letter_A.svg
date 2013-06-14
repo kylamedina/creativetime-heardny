@@ -5,7 +5,7 @@
 	 width="367.124px" height="451.917px" viewBox="0 0 367.124 451.917" enable-background="new 0 0 367.124 451.917"
 	 xml:space="preserve">
 <g id="A">
-	<g>
+	<g id="A1">
 		<defs>
 			<polyline id="SVGID_45_" points="265.858,79.362 244.91,1 130.082,1 109.133,79.165 			"/>
 		</defs>
@@ -18,7 +18,7 @@
 			</image>
 		</g>
 	</g>
-	<g>
+	<g id="A2">
 		<defs>
 			<polyline id="SVGID_47_" points="108.9,78.974 82.629,175.255 165.776,175.254 186.983,78.974 			"/>
 		</defs>
@@ -31,7 +31,7 @@
 			</image>
 		</g>
 	</g>
-	<g>
+	<g id="A3">
 		<defs>
 			<polyline id="SVGID_49_" points="166.293,175.181 152.904,233.759 66.952,233.759 83.101,175.311 			"/>
 		</defs>
@@ -45,7 +45,7 @@
 		</g>
 		<use xlink:href="#SVGID_49_"  overflow="visible" fill="none" stroke="#DF366D" stroke-miterlimit="10"/>
 	</g>
-	<g>
+	<g id="A4">
 		<defs>
 			<polygon id="SVGID_51_" points="66.952,233.758 152.904,233.759 129.069,344.707 36.919,344.707 			"/>
 		</defs>
@@ -53,7 +53,7 @@
 			<use xlink:href="#SVGID_51_"  overflow="visible"/>
 		</clipPath>
 	</g>
-	<g>
+	<g id="A5">
 		<defs>
 			<polyline id="SVGID_53_" points="36.919,344.707 129.181,344.707 104.353,451 8.146,451 			"/>
 		</defs>
@@ -66,7 +66,7 @@
 			</image>
 		</g>
 	</g>
-	<g>
+	<g id="A6">
 		<defs>
 			<polyline id="SVGID_55_" points="265.604,79.104 294.439,184.104 209.786,184.104 186.207,79.362 			"/>
 		</defs>
@@ -79,7 +79,7 @@
 			</image>
 		</g>
 	</g>
-	<g>
+	<g id="A7">
 		<defs>
 			<polyline id="SVGID_57_" points="209.864,184.123 294.433,184.087 302.657,214.343 216.604,214.379 			"/>
 		</defs>
@@ -92,12 +92,12 @@
 			</image>
 		</g>
 	</g>
-	<g id="MAhpsX_1_">
+	<g id="A8">
 		
 			<image overflow="visible" width="284" height="236" id="MAhpsX_2_" xlink:href="702E46518ABB9FD4.jpg"  transform="matrix(0.3857 0 0 0.3846 216.7241 214.3789)">
 		</image>
 	</g>
-	<g>
+	<g id="A9">
 		<defs>
 			<polyline id="SVGID_59_" points="237.026,305.138 326.587,305.138 345.517,376.129 253.641,376.129 			"/>
 		</defs>
@@ -110,7 +110,7 @@
 			</image>
 		</g>
 	</g>
-	<g>
+	<g id="A10">
 		<defs>
 			<polyline id="SVGID_61_" points="253.707,376.129 345.414,376.129 365.819,451 270.725,451 			"/>
 		</defs>
@@ -123,7 +123,7 @@
 			</image>
 		</g>
 	</g>
-	<g>
+	<g id="A11">
 		<defs>
 			<polyline id="SVGID_63_" points="231.904,282.088 248.664,356.151 244.008,363.974 199.785,362.293 164.224,361 171.078,289.233 
 				173.664,278.242 			"/>
@@ -137,7 +137,7 @@
 			</image>
 		</g>
 	</g>
-	<g>
+	<g id="A12">
 		<defs>
 			<path id="SVGID_65_" d="M141.724,282.25l-15.646,74.095h18.247h28.783h3.247l0.155-6.341c0.388-0.388,0-62.879,0-62.879
 				s5.819-22.46,6.207-22.59"/>

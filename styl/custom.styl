@@ -1,25 +1,25 @@
-@keyframes bounceInDown {
-	0% {
+@keyframes bounceInDown 
+	0% 
 		opacity: 0;
 		transform: translateY(-2000px);
-	}
 	
-	60% {
+	
+	60% 
 		opacity: 1;
 		transform: translateY(30px);
-	}
 	
-	80% {
+	
+	80% 
 		transform: translateY(-50px);
-	}
 	
-	100% {
+	
+	100% 
 		transform: translateY(0);
-	}
-}
+	
+
 object
 	animation-name: bounceInDown
-	pointer-events: none
+
 	animation-duration: 2s
 span:nth-child(2) object
 	animation-delay 0.1s
@@ -66,7 +66,6 @@ span:nth-child(9) object
 			&:hover
 				transition all 0.3s
 	.nav
-		pointer-events: none
 		width 100%
 		background white
 		position absolute
@@ -115,7 +114,7 @@ arrows()
 
 .arrow
 	display inline-block
-	size  10px 39px
+	size	10px 39px
 	vertical-align middle
 	&.left
 		background url('assets/img/arrow_left.svg') no-repeat
@@ -142,3 +141,28 @@ arrows()
 ::-webkit-scrollbar-thumb
 	border-radius: 10px
 	background-color: pink
+
+#overlay
+	width 100%
+	height 100%
+	display:none;
+	background:rgba(0, 0, 0,0.5);
+	position:absolute;
+	z-index:999;
+	pointer-events:none;
+#popup  
+	position:absolute;
+	transform: scale(0,0);
+	-ms-transform: scale(0,0);
+	-webkit-transform: scale(0,0);
+	width:auto;
+	display:block;
+	border:1px solid rgba(240, 83, 122,1);
+	background:#fff
+	padding:5px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.3);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px; 
+#close
+	pointer-events:auto;
