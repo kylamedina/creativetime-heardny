@@ -1,61 +1,69 @@
 jQuery(document).ready(function(){
 
-	var parsePoints = function(datas){
+	jQuery("#close").click(function () { console.log('ok')
 
-		var point = new Array();
-		var points = new Array();
+		jQuery(this).parent('#overlay').addClass('overlay').fadeOut('fast').children('span').empty().dequeue();
 
-		point = datas.split(" ");
+	});
 
-		for (i in point) {
+	jQuery('body').find('object').each(function(){
 
-			point[i] && points.push(point[i].split(","));
-		}
-		return points;
-	}
+  		jQuery(this.getSVGDocument().documentElement).children('g').children('g').each(function(){
 
-	jQuery('body svg').find('polygon[fill*="url"], rect[fill*="url"], path[fill*="url"], .hover').each(function(){
+			jQuery(this).click(function(e){
 
+				var x = e.pageX + jQuery('#'+this.parentNode.getAttribute('id')).offset().left;
+				var y = e.pageY + jQuery('#'+this.parentNode.getAttribute('id')).offset().top;
 
-		jQuery(this).hover(
+				var id = this.getAttribute('id');
+				var img = '<img src="'+id+'">';
 
-		function(){
-			var id = jQuery(this).parent('svg').parent('span').attr('id').toUpperCase();
-			var svgClone = jQuery('#' + id + ' svg').clone();
-			var offset = jQuery(this).offset();
+				if(jQuery('#overlay').data('current') != id && jQuery('#overlay').data('current'))
+					jQuery('#overlay')
+								 .stop()
+							     .removeClass('overlay')
+								 .children('span')
+								 .empty()
+								 .delay(500)
+								 .parent('div')
+								 .fadeIn('fast')
+								 .children('span')
+								 .append(img)
+								 .transition({ translate: [(jQuery('.frame').width()/2) - (jQuery('#popup').width()/2),(jQuery('.frame').height()/2) - (jQuery('#popup').height()/2)] }, 500)
+								 .dequeue();
 
-			//var points = parsePoints(jQuery(this).attr('points'));
+				else 
+					if(jQuery('#overlay').hasClass('overlay'))
+						jQuery('#overlay')
+										 .stop()
+										 .removeClass('overlay')
+										 .fadeIn('fast')
+										 .children('span')
+										 .append(img)
+										 .css({ translate: [x,y] })
+										 .transition({ translate: [(jQuery('.frame').width()/2) - (jQuery('#popup').width()/2),(jQuery('.frame').height()/2) - (jQuery('#popup').height()/2)] }, 500)
+										 .dequeue();
+						
+					else jQuery('#overlay')
+										 .stop()
+										 .addClass('overlay')
+										 .fadeOut('fast')
+										 .children('span')
+										 .transition({ translate: [x,y] }, 500)
+										 .empty()
+										 .dequeue();
+				
+				jQuery('#overlay').data('current',id);
 
-			//var distX = (parseFloat(points[0][0]) + parseFloat(points[1][0]) + parseFloat(points[2][0]) + parseFloat(points[3][0])) / points.length;
-			//var distY = (parseFloat(points[0][1]) + parseFloat(points[1][1]) + parseFloat(points[2][1]) + parseFloat(points[3][1])) / points.length;
-
-			//var distX = (((this.getBoundingClientRect().width*1.2)/2)*-1);
-			//var distY = (((this.getBoundingClientRect().height*1.2)/2)*-1);
-
-			var distX = (this.getBoundingClientRect().width) - (this.getBoundingClientRect().width*1.2);
-			var distY = (this.getBoundingClientRect().height) - (this.getBoundingClientRect().height*1.2);
-
-			//var distX = (offset.left) - (offset.left*1.2);
-			//var distY = (offset.top) - (offset.top*1.2);
-
-			//console.log(/*distX + " : " + distY + " : " +*/);
-
-			jQuery(this).parent('svg').append( jQuery(this).delay(10).transition({ scale: [1.2], duration: 10, x: distX, y: distY }) );
-
-		},
-		function(){
-			var id = jQuery(this).parent('svg').parent('span').attr('id').toUpperCase();
-			
-			jQuery(this).transition({ scale: [1], duration: 10, x: 0, y: 0 }).dequeue();
-			jQuery('#' + id).replaceWith(svgClone);
-			//var id = jQuery(this).parent('svg').parent('span').attr('id').toLowerCase();
-
-			//
-			//jQuery(this).parent('svg').insertBefore(g#id).delay(10).transition({ scale: [1], duration: 10, x: distX, y: distY });
-			//jQuery(this).parent('svg').prepend();
-
-			console.log(id)//.insertBefore(g#id);
-
+			});
+		
+			jQuery(this).hover(
+			function(){
+				jQuery(this).transition({ opacity: 0.5 }, 50).dequeue();
+			},
+			function(){
+				jQuery(this).transition({ opacity: 1 }, 50).dequeue();
+			});
 		});
 
 	});
@@ -76,9 +84,8 @@ jQuery(document).ready(function(){
       	var target = jQuery("#"+letter);
       
       	if (target) {
-          	jQuery('html,body').animate({ scrollLeft: target.offset().left }, 500);
-          	jQuery(this).addClass('active').siblings().removeClass('active');
-          	return false;
+      		jQuery(this).addClass('active').siblings().removeClass('active');
+          	jQuery('.frame').animate({ scrollLeft: (target.position().left + (target.width()/2) - (jQuery('.frame').width()/2)) }, 500).dequeue();
       	}
 	    
 	});
