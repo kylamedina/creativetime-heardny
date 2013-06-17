@@ -715,8 +715,9 @@ nav li {
   pointer-events: auto;
 }
 .scaled-img {
-  height: 450px;
+  max-height: 450px;
   width: auto;
+  max-width: 960px;
 }
 @-moz-keyframes bounceInDown {
   0% {
