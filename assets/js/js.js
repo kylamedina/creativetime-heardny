@@ -1,6 +1,6 @@
 jQuery(document).ready(function(){
 
-	jQuery("#close").click(function () { console.log('ok')
+	jQuery("#close").click(function () { 
 
 		jQuery(this).parent('#overlay').addClass('overlay').fadeOut('fast').children('span').empty().dequeue();
 
@@ -8,7 +8,7 @@ jQuery(document).ready(function(){
 
 	jQuery('body').find('object').each(function(){
 
-  		jQuery(this.getSVGDocument().documentElement).children('g').children('g').each(function(){
+			jQuery(this.getSVGDocument().documentElement).children('g').children('g').each(function(){
 
 			jQuery(this).click(function(e){
 
@@ -16,13 +16,13 @@ jQuery(document).ready(function(){
 				var y = e.pageY + jQuery('#'+this.parentNode.getAttribute('id')).offset().top;
 
 				var id = this.getAttribute('id');
-				var img = '<img src="'+id+'">';
-
+				var img = '<img src="assets/img/'+this.parentNode.getAttribute('id')+'/big/'+id+'.jpg">';
+			
 				if(jQuery('#overlay').data('current') != id && jQuery('#overlay').data('current'))
 					jQuery('#overlay')
 							     .data('current',id)
 								 .stop()
-							     .removeClass('overlay')
+								 .removeClass('overlay')
 								 .children('span')
 								 .empty()
 								 .delay(500)
@@ -81,16 +81,16 @@ jQuery(document).ready(function(){
 
 	});
 
-	jQuery('.wrapper nav ul li').click(function() {
+	jQuery('nav ul li').click(function() {
 
 		var letter = (jQuery(this).html().toUpperCase() != '#') ? jQuery(this).html().toUpperCase() : 'hash';
-      	var target = jQuery("#"+letter);
-      
-      	if (target) {
-      		jQuery(this).addClass('active').siblings().removeClass('active');
-          	jQuery('.frame').animate({ scrollLeft: (target.position().left + (target.width()/2) - (jQuery('.frame').width()/2)) }, 500).dequeue();
-      	}
-	    
+				var target = jQuery("#"+letter);
+			
+				if (target) {
+					jQuery(this).addClass('active').siblings().removeClass('active');
+						jQuery('.frame').animate({ scrollLeft: (target.position().left + (target.width()/2) - (jQuery('.frame').width()/2)) }, 500).dequeue();
+				}
+			
 	});
 
 });
