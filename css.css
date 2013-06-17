@@ -714,6 +714,10 @@ nav li {
 #close {
   pointer-events: auto;
 }
+.scaled-img {
+  height: 450px;
+  width: auto;
+}
 @-moz-keyframes bounceInDown {
   0% {
     filter: alpha(opacity = 0);
