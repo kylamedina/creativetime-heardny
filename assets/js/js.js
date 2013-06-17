@@ -20,6 +20,7 @@ jQuery(document).ready(function(){
 
 				if(jQuery('#overlay').data('current') != id && jQuery('#overlay').data('current'))
 					jQuery('#overlay')
+							     .data('current',id)
 								 .stop()
 							     .removeClass('overlay')
 								 .children('span')
@@ -30,11 +31,12 @@ jQuery(document).ready(function(){
 								 .children('span')
 								 .append(img)
 								 .transition({ translate: [(jQuery('.frame').width()/2) - (jQuery('#popup').width()/2),(jQuery('.frame').height()/2) - (jQuery('#popup').height()/2)] }, 500)
-								 .dequeue();
+								 .dequeue();		 
 
 				else 
-					if(jQuery('#overlay').hasClass('overlay'))
+					if(jQuery('#overlay').hasClass('overlay')) 
 						jQuery('#overlay')
+										 .data('current', id)
 										 .stop()
 										 .removeClass('overlay')
 										 .fadeIn('fast')
@@ -43,8 +45,9 @@ jQuery(document).ready(function(){
 										 .css({ translate: [x,y] })
 										 .transition({ translate: [(jQuery('.frame').width()/2) - (jQuery('#popup').width()/2),(jQuery('.frame').height()/2) - (jQuery('#popup').height()/2)] }, 500)
 										 .dequeue();
-						
+
 					else jQuery('#overlay')
+										 .data('current','')
 										 .stop()
 										 .addClass('overlay')
 										 .fadeOut('fast')
@@ -53,8 +56,8 @@ jQuery(document).ready(function(){
 										 .empty()
 										 .dequeue();
 				
-				jQuery('#overlay').data('current',id);
 
+				
 			});
 		
 			jQuery(this).hover(
