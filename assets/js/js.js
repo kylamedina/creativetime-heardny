@@ -2,7 +2,7 @@ jQuery(document).ready(function(){
 
 	jQuery("#close").click(function () { 
 
-		jQuery(this).parent('#overlay').addClass('overlay').fadeOut('fast').children('span').empty().dequeue();
+		jQuery(this).parent('#overlay').data('current','').addClass('overlay').fadeOut('fast').children('span').empty().dequeue();
 
 	});
 
@@ -16,7 +16,7 @@ jQuery(document).ready(function(){
 				var y = e.pageY + jQuery('#'+this.parentNode.getAttribute('id')).offset().top;
 
 				var id = this.getAttribute('id');
-				var img = '<img class="scaled-image" src="assets/img/'+this.parentNode.getAttribute('id')+'/big/'+id+'.jpg">';
+				var img = '<img class="scaled-img" src="assets/img/'+this.parentNode.getAttribute('id')+'/big/'+id+'.jpg">';
 			
 				if(jQuery('#overlay').data('current') != id && jQuery('#overlay').data('current'))
 					jQuery('#overlay')
@@ -25,12 +25,15 @@ jQuery(document).ready(function(){
 								 .removeClass('overlay')
 								 .children('span')
 								 .empty()
-								 .delay(500)
 								 .parent('div')
 								 .fadeIn('fast')
 								 .children('span')
 								 .append(img)
-								 .transition({ translate: [(jQuery('.frame').width()/2) - (jQuery('#popup').width()/2),(jQuery('.frame').height()/2) - (jQuery('#popup').height()/2)] }, 500)
+								 .children('img').load(function(){
+								 	var w = (jQuery('#overlay').width()/2) - (jQuery('#popup').outerWidth()/2);
+									var h = (jQuery('#overlay').height()/2) - (jQuery('#popup').outerHeight()/2);
+								 	jQuery(this).parent('span').transition({ translate: [w,h] });
+								 })
 								 .dequeue();		 
 
 				else 
@@ -42,8 +45,11 @@ jQuery(document).ready(function(){
 										 .fadeIn('fast')
 										 .children('span')
 										 .append(img)
-										 .css({ translate: [x,y] })
-										 .transition({ translate: [(jQuery('.frame').width()/2) - (jQuery('#popup').width()/2),(jQuery('.frame').height()/2) - (jQuery('#popup').height()/2)] }, 500)
+										 .children('img').load(function(){
+										 	var w = (jQuery('#overlay').width()/2) - (jQuery('#popup').outerWidth()/2);
+											var h = (jQuery('#overlay').height()/2) - (jQuery('#popup').outerHeight()/2);
+										 	jQuery(this).parent('span').css({ translate: [w,h] });
+										 })
 										 .dequeue();
 
 					else jQuery('#overlay')
@@ -55,7 +61,6 @@ jQuery(document).ready(function(){
 										 .transition({ translate: [x,y] }, 500)
 										 .empty()
 										 .dequeue();
-				
 
 				
 			});
