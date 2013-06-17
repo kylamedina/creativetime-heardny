@@ -16,7 +16,7 @@ jQuery(document).ready(function(){
 				var y = e.pageY + jQuery('#'+this.parentNode.getAttribute('id')).offset().top;
 
 				var id = this.getAttribute('id');
-				var img = id;//'<img src="'+id+'">';
+				var img = '<img src="assets/img/'+this.parentNode.getAttribute('id')+'/big/'+id+'.jpg">';
 			
 				if(jQuery('#overlay').data('current') != id && jQuery('#overlay').data('current'))
 					jQuery('#overlay')

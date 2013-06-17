@@ -16,12 +16,13 @@
 			<clipPath id="SVGID_2_">
 				<use xlink:href="#SVGID_87_"  overflow="visible"/>
 			</clipPath>
-			<g id="uRlrpM_1_" clip-path="url(#SVGID_2_)">
-				
-					<image overflow="visible" width="184" height="169" id="uRlrpM_2_" xlink:href="3579C38F4336BA65.jpg"  transform="matrix(0.3925 0 0 0.3925 35.7217 384.2539)">
-				</image>
-			</g>
+
 		</g>
+	</g>
+	<g id="hash16" clip-path="url(#SVGID_2_)">
+		
+			<image overflow="visible" width="184" height="169" id="uRlrpM_2_" xlink:href="3579C38F4336BA65.jpg"  transform="matrix(0.3925 0 0 0.3925 35.7217 384.2539)">
+		</image>
 	</g>
 	<g id="hash2">
 		
@@ -138,11 +139,12 @@
 		
 			<image overflow="visible" width="207" height="187" id="_x30_TG08e_2_" xlink:href="BA9943B4B6E8F0FD.jpg"  transform="matrix(0.3879 0 0 0.3879 94.0693 113.8848)">
 		</image>
-		<g id="WGTQYh_1_">
-			
-				<image overflow="visible" width="343" height="187" id="WGTQYh_2_" xlink:href="BA9943B4B6E8F0E2.jpg"  transform="matrix(0.3879 0 0 0.3879 1.0049 265.0703)">
-			</image>
-		</g>
+
+	</g>
+	<g id="hash15">
+		
+			<image overflow="visible" width="343" height="187" id="WGTQYh_2_" xlink:href="BA9943B4B6E8F0E2.jpg"  transform="matrix(0.3879 0 0 0.3879 1.0049 265.0703)">
+		</image>
 	</g>
 	<g id="hash13">
 		<defs>
