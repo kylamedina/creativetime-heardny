@@ -763,6 +763,24 @@ nav li {
   -ms-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
+#tweets {
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  pointer-events: none;
+  filter: alpha(opacity = 0);
+  opacity: 0;
+}
+.twitter-tweet-rendered {
+  max-height: 450px !important;
+  border: 1px solid #f0537a !important;
+  overflow-y: scroll;
+}
+.twitter-tweet-rendered .cards-multimedia img {
+  max-height: 250px !important;
+  max-width: auto !important;
+}
 @-moz-keyframes bounceInDown {
   0% {
     filter: alpha(opacity = 0);
