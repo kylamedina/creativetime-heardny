@@ -719,6 +719,9 @@ nav li {
   width: auto;
   max-width: 960px;
 }
+.tweets {
+  display: none;
+}
 @-moz-keyframes bounceInDown {
   0% {
     filter: alpha(opacity = 0);
