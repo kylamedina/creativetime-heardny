@@ -16,7 +16,13 @@ jQuery(document).ready(function(){
 				var y = e.pageY + jQuery('#'+this.parentNode.getAttribute('id')).offset().top;
 
 				var id = this.getAttribute('id');
-				var img = '<img class="scaled-img" src="assets/img/'+this.parentNode.getAttribute('id')+'/big/'+id+'.jpg">';
+
+				if(jQuery(this).attr('class') == 'twitter')
+					var img = jQuery('#clone #'+this.getAttribute('id')).clone().html()
+				else if (jQuery(this).attr('class') == 'vine')
+					var img = '<iframe class="vine-embed" src="'+jQuery(this).attr('data-video')+'/embed/simple" width="400" height="400" frameborder="0"></iframe>';
+				else
+					var img = '<img class="scaled-img" src="assets/img/'+this.parentNode.getAttribute('id')+'/big/'+id+'.jpg">';
 			
 				if(jQuery('#overlay').data('current') != id && jQuery('#overlay').data('current'))
 					jQuery('#overlay')
@@ -29,10 +35,11 @@ jQuery(document).ready(function(){
 								 .fadeIn('fast')
 								 .children('span')
 								 .append(img)
-								 .children('img').load(function(){
+								 .css({ opacity: 0 })
+								 .children().load(function(){
 								 	var w = (jQuery('#overlay').width()/2) - (jQuery('#popup').outerWidth()/2);
 									var h = (jQuery('#overlay').height()/2) - (jQuery('#popup').outerHeight()/2);
-								 	jQuery(this).parent('span').transition({ translate: [w,h] });
+								 	jQuery(this).parent('span').transition({ opacity: 1, translate: [w,h] });
 								 })
 								 .dequeue();		 
 
@@ -45,10 +52,11 @@ jQuery(document).ready(function(){
 										 .fadeIn('fast')
 										 .children('span')
 										 .append(img)
-										 .children('img').load(function(){
+										 .css({ opacity: 0 })
+										 .children().load(function(){
 										 	var w = (jQuery('#overlay').width()/2) - (jQuery('#popup').outerWidth()/2);
 											var h = (jQuery('#overlay').height()/2) - (jQuery('#popup').outerHeight()/2);
-										 	jQuery(this).parent('span').css({ translate: [w,h] });
+										 	jQuery(this).parent('span').fadeIn('fast').css({ opacity: 1, translate: [w,h] });
 										 })
 										 .dequeue();
 

@@ -57,7 +57,7 @@ html
 								li n
 								li y
 						.arrow.right
-		div.tweets
+		div#clone.tweets
 			include twitter
 
 	script
@@ -66,6 +66,7 @@ html
 		, {custom: "assets/js/js.js"}
 		, {transit: "assets/js/jquery.transit.js"}
 		, {twtter: "http://platform.twitter.com/widgets.js"}
+		, {vine: "http://platform.vine.co/static/scripts/embed.js"}
 		, function() {
 			console.log("Head JS Finished");
 			
