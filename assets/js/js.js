@@ -15,16 +15,23 @@ jQuery(document).ready(function(){
 				var x = e.pageX + jQuery('#'+this.parentNode.getAttribute('id')).offset().left;
 				var y = e.pageY + jQuery('#'+this.parentNode.getAttribute('id')).offset().top;
 
-				var id = this.getAttribute('id');
+				var id = this.getAttribute('id');var img = '';
 
 				if(jQuery(this).attr('class') == 'twitter')
-					var img = jQuery('#clone #'+this.getAttribute('id')).clone().html()
-				else if (jQuery(this).attr('class') == 'vine')
+					var tweet = true;
+					
+				if (jQuery(this).attr('class') == 'vine')
 					var img = '<iframe class="vine-embed" src="'+jQuery(this).attr('data-video')+'/embed/simple" width="400" height="400" frameborder="0"></iframe>';
 				else
 					var img = '<img class="scaled-img" src="assets/img/'+this.parentNode.getAttribute('id')+'/big/'+id+'.jpg">';
 			
-				if(jQuery('#overlay').data('current') != id && jQuery('#overlay').data('current'))
+				if(jQuery('#overlay').data('current') != id && jQuery('#overlay').data('current')) {
+
+					jQuery('#tweets')
+								 .css({ opacity: 0 })
+								 .find('div')
+								 .each(function(){jQuery(this).css('display', 'none');})
+
 					jQuery('#overlay')
 							     .data('current',id)
 								 .stop()
@@ -37,13 +44,19 @@ jQuery(document).ready(function(){
 								 .append(img)
 								 .css({ opacity: 0 })
 								 .children().load(function(){
-								 	var w = (jQuery('#overlay').width()/2) - (jQuery('#popup').outerWidth()/2);
-									var h = (jQuery('#overlay').height()/2) - (jQuery('#popup').outerHeight()/2);
-								 	jQuery(this).parent('span').transition({ opacity: 1, translate: [w,h] });
+								 	if(tweet) {
+										var w = (jQuery('#overlay').width()/2) - (jQuery('#tweets').children('#'+id).outerWidth()/2);
+										var h = (jQuery('#overlay').height()/2) - (jQuery('#tweets').children('#'+id).outerHeight()/2);
+										jQuery('#tweets').css({ opacity: 1 }).children('#'+id).fadeIn('fast').css({ translate: [w,h] }).siblings().css('display', 'none');
+								 	} else {
+								 		var w = (jQuery('#overlay').width()/2) - (jQuery('#popup').outerWidth()/2);
+										var h = (jQuery('#overlay').height()/2) - (jQuery('#popup').outerHeight()/2);
+								 		jQuery(this).parent('span').fadeIn('fast').css({ opacity: 1, translate: [w,h] });
+								 	}
 								 })
 								 .dequeue();		 
 
-				else 
+				} else 
 					if(jQuery('#overlay').hasClass('overlay')) 
 						jQuery('#overlay')
 										 .data('current', id)
@@ -54,9 +67,15 @@ jQuery(document).ready(function(){
 										 .append(img)
 										 .css({ opacity: 0 })
 										 .children().load(function(){
-										 	var w = (jQuery('#overlay').width()/2) - (jQuery('#popup').outerWidth()/2);
-											var h = (jQuery('#overlay').height()/2) - (jQuery('#popup').outerHeight()/2);
-										 	jQuery(this).parent('span').fadeIn('fast').css({ opacity: 1, translate: [w,h] });
+											if(tweet) {
+												var w = (jQuery('#overlay').width()/2) - (jQuery('#tweets').children('#'+id).outerWidth()/2);
+												var h = (jQuery('#overlay').height()/2) - (jQuery('#tweets').children('#'+id).outerHeight()/2);
+												jQuery('#tweets').css({ opacity: 1 }).children('#'+id).fadeIn('fast').css({ translate: [w,h] }).siblings().css('display', 'none');
+										 	} else {
+										 		var w = (jQuery('#overlay').width()/2) - (jQuery('#popup').outerWidth()/2);
+												var h = (jQuery('#overlay').height()/2) - (jQuery('#popup').outerHeight()/2);
+										 		jQuery(this).parent('span').fadeIn('fast').css({ opacity: 1, translate: [w,h] });
+										 	}
 										 })
 										 .dequeue();
 
@@ -68,6 +87,12 @@ jQuery(document).ready(function(){
 										 .children('span')
 										 .transition({ translate: [x,y] }, 500)
 										 .empty()
+										 .parent('div')
+										 .parent('body')
+										 .children('#tweets')
+										 .css({ opacity: 0 })
+										 .find('div')
+										 .each(function(){jQuery(this).css('display', 'none');})
 										 .dequeue();
 
 				
