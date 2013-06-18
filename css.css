@@ -722,6 +722,47 @@ nav li {
 .tweets {
   display: none;
 }
+.meter {
+  height: 10px;
+  width: 200px;
+  position: absolute;
+  left: 380px;
+  top: 220px;
+  background: #fff;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -o-border-radius: 25px;
+  -ms-border-radius: 25px;
+  border-radius: 25px;
+  padding: 2px;
+}
+.meter > span {
+  display: block;
+  height: 100%;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  background-color: #f0537a;
+  position: relative;
+  overflow: hidden;
+  -moz-animation-name: expandWidth;
+  -webkit-animation-name: expandWidth;
+  -o-animation-name: expandWidth;
+  -ms-animation-name: expandWidth;
+  animation-name: expandWidth;
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  -ms-animation-duration: 2s;
+  animation-duration: 2s;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
 @-moz-keyframes bounceInDown {
   0% {
     filter: alpha(opacity = 0);
@@ -905,6 +946,51 @@ nav li {
     -o-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
+  }
+}
+@-moz-keyframes expandWidth {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes expandWidth {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+@-o-keyframes expandWidth {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+@-ms-keyframes expandWidth {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+@keyframes expandWidth {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
   }
 }
 @-moz-keyframes fadeIn {

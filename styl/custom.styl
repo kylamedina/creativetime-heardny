@@ -15,6 +15,12 @@
 	
 	100% 
 		transform: translateY(0);
+
+@keyframes expandWidth
+	0%
+		width 0
+	100%
+		width 100%
 	
 
 object
@@ -175,3 +181,23 @@ arrows()
 
 .tweets
 	display none
+
+.meter
+	height: 10px;
+	width 200px 
+	position: absolute;
+	left 380px
+	top 220px
+	background: #fff
+	border-radius: 25px;
+	padding: 2px;
+	> span
+		display: block;
+		height: 100%;
+		border-radius: 20px;
+		background-color: pink
+		position: relative;
+		overflow: hidden
+		animation-name: expandWidth
+		animation-duration: 2s
+		animation-iteration-count infinite
