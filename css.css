@@ -519,9 +519,10 @@ body {
   overflow-y: hidden;
 }
 .frame .creativetime {
-  width: 3000px;
+  width: 2797px;
   height: 100%;
   position: relative;
+  margin-right: -10% !important;
 }
 .frame embed,
 .frame object {
@@ -579,19 +580,11 @@ body {
   visibility: hidden;
 }
 .grid span {
-  display: inline;
-  float: left;
-  width: 10%;
-  margin: 0 0%;
-  *width: 10% -correction;
-  *margin: 0 0% -correction;
+  width: 333px;
+  display: inline-block;
 }
 span#I {
-  width: 5%;
-}
-span#A,
-span#R {
-  width: 11%;
+  width: 133px;
 }
 nav {
   display: inline-block;

@@ -65,9 +65,10 @@ body
 	overflow-x scroll
 	overflow-y: hidden
 	.creativetime
-		width 3000px
+		width 2797px
 		height 100%
 		position relative
+		margin-right -10% !important
 	embed, object
 		width 100%
 		height 400px
@@ -96,13 +97,15 @@ body
 .grid
 	clearfix()
 	span
-		col 1
+		width 333px
+		display inline-block
+	.vine, .twitter, .scaled-img
+		display block
 
 span
 	&#I
-		width 5%
-	&#A, &#R
-		width 11%
+		width 133px
+
 
 
 
@@ -110,6 +113,7 @@ nav
 	nav(true)
 	display inline-block
 	vertical-align middle
+	z-index:9999;
 	li
 		border 2px solid transparent
 		border-radius 50%
@@ -153,7 +157,7 @@ arrows()
 
 #overlay
 	width 960px
-	height 470px
+	height 540px
 	display:none;
 	background:rgba(0, 0, 0,0.5);
 	position:absolute;
