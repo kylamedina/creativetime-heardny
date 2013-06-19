@@ -52,7 +52,11 @@ object
 @keyframes slideLeft
 	from
 		margin-left 0
-
+body
+	width 960px
+	height 540px
+	overflow-x scroll
+	overflow-y: hidden
 .frame
 	width 960px
 	height 540px
@@ -211,8 +215,8 @@ arrows()
 	opacity:0;
 .twitter-tweet-rendered
 	max-height 450px !important
-	border 1px solid pink !important
-	overflow-y scroll
+	border-radius 5px !important
+	border none !important
 	.cards-multimedia img
 		max-height 250px !important
 		max-width auto !important

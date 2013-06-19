@@ -503,6 +503,12 @@ object {
   -ms-animation-delay: 0.9s;
   animation-delay: 0.9s;
 }
+body {
+  width: 960px;
+  height: 540px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
 .frame {
   width: 960px;
   height: 540px;
@@ -774,8 +780,12 @@ nav li {
 }
 .twitter-tweet-rendered {
   max-height: 450px !important;
-  border: 1px solid #f0537a !important;
-  overflow-y: scroll;
+  -moz-border-radius: 5px !important;
+  -webkit-border-radius: 5px !important;
+  -o-border-radius: 5px !important;
+  -ms-border-radius: 5px !important;
+  border-radius: 5px !important;
+  border: none !important;
 }
 .twitter-tweet-rendered .cards-multimedia img {
   max-height: 250px !important;
