@@ -554,6 +554,7 @@ body {
   height: 70px;
   bottom: 0;
   display: block;
+  z-index: 9999;
 }
 .frame .nav:after {
   content: ".";
@@ -582,6 +583,11 @@ body {
 .grid span {
   width: 333px;
   display: inline-block;
+}
+.grid .vine,
+.grid .twitter,
+.grid .scaled-img {
+  display: block;
 }
 span#I {
   width: 133px;
