@@ -2,6 +2,7 @@ jQuery(document).ready(function(){
 
 	jQuery('#tweets').find('div').each(function(){
 		jQuery(this).children().contents().find('body div.media a img').css('width','auto').css('height','200px');
+		jQuery(this).children().contents().find('body div.media iframe').css('width','auto').css('height','200px');
 	});
 
 	jQuery("#close").click(function () { 
@@ -52,7 +53,7 @@ jQuery(document).ready(function(){
 								 	jQuery('.meter').css('display', 'none');
 
 								 	if(tweet) {
-										var w = (jQuery('#overlay').width()/2) - (jQuery('#tweets').children('#'+id).width()/2);
+										var w = 229;
 										var h = (jQuery('#overlay').height()/2) - (jQuery('#tweets').children('#'+id).height()/2);
 										jQuery('#tweets').css({ opacity: 1, translate: [w,h] }).children('#'+id).fadeIn('fast').siblings().css('display', 'none');
 								 	} else {
@@ -78,7 +79,7 @@ jQuery(document).ready(function(){
 										 	jQuery('.meter').css('display', 'none');
 
 											if(tweet) {
-												var w = (jQuery('#overlay').width()/2) - (jQuery('#tweets').children('#'+id).width()/2);
+												var w = 229;
 												var h = (jQuery('#overlay').height()/2) - (jQuery('#tweets').children('#'+id).height()/2);
 												jQuery('#tweets').css({ opacity: 1, translate: [w,h] }).children('#'+id).fadeIn('fast').siblings().css('display', 'none');
 										 	} else {
