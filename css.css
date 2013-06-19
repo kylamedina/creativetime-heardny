@@ -688,7 +688,6 @@ nav li {
   background: rgba(0,0,0,0.5);
   position: absolute;
   z-index: 999;
-  pointer-events: none;
 }
 #popup {
   position: absolute;
@@ -725,6 +724,7 @@ nav li {
   height: auto;
   max-width: 400px;
   max-height: 400px;
+  display: block;
 }
 .tweets {
   display: none;
@@ -775,9 +775,12 @@ nav li {
   position: absolute;
   z-index: 1000;
   top: 0;
-  pointer-events: none;
   filter: alpha(opacity = 0);
   opacity: 0;
+  pointer-events: none;
+}
+#tweets.importantRule {
+  pointer-events: auto !important;
 }
 .twitter-tweet-rendered {
   max-height: 450px !important;

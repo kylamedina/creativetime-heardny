@@ -158,7 +158,6 @@ arrows()
 	background:rgba(0, 0, 0,0.5);
 	position:absolute;
 	z-index:999;
-	pointer-events:none;
 #popup  
 	position:absolute;
 	transform: scale(0,0);
@@ -181,6 +180,7 @@ arrows()
 	height auto
 	max-width 400px
 	max-height 400px
+	display block
 .tweets
 	display none
 
@@ -209,8 +209,10 @@ arrows()
 	position:absolute;
 	z-index:1000;
 	top:0;
-	pointer-events:none;
 	opacity:0;
+	pointer-events none
+	&.importantRule
+		pointer-events auto !important
 .twitter-tweet-rendered
 	max-height 450px !important
 	border-radius 5px !important
