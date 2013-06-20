@@ -60,7 +60,7 @@ jQuery(document).ready(function(){
 
 										if(c == 'twitter') {
 											var w = 229;
-											var h = (jQuery('#overlay').height()/2) - (jQuery('#tweets').children('#'+i).height()/2);
+											var h = (jQuery('#overlay').height()/2) - (jQuery('#tweets').children('#'+i).outerHeight()/2);
 											jQuery('#tweets').addClass('importantRule').css({ opacity: 1, translate: [w,h] }).children('#'+i).fadeIn('fast').siblings().css('display', 'none');
 									 	} else {
 									 		var w = (jQuery('#overlay').width()/2) - (jQuery('#popup').outerWidth()/2);
