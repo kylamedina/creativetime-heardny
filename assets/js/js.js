@@ -1,6 +1,6 @@
 jQuery(document).ready(function(){
 
-	var x,y;
+	var x,y,s;
 
 	jQuery('#tweets').find('div').each(function(){
 		jQuery(this).children().contents().find('body div.media a img').css('width','auto').css('height','200px');
@@ -106,25 +106,49 @@ jQuery(document).ready(function(){
 
 	});
 
-	jQuery('.wrapper div').click(function() {
+	jQuery('.wrapper div').mousedown(function() {
 
-		if(jQuery(this).hasClass('left'))
-			jQuery(this).parent('div').find('li.active').prev().addClass('active').click().siblings().removeClass('active').dequeue();
+		var myself = jQuery(this);
 
-		if(jQuery(this).hasClass('right'))
-			jQuery(this).parent('div').find('li.active').next().addClass('active').click().siblings().removeClass('active').dequeue();
+		s = setInterval(function(){
+
+			if(myself.hasClass('left')) {
+				var left = jQuery('.frame').scrollLeft()>0 ? jQuery('.frame').scrollLeft()-50 : jQuery('.frame').scrollLeft();
+				jQuery('.frame').scrollLeft(left);
+			}
+
+			if(myself.hasClass('right')) {
+				var right = jQuery('.frame').scrollLeft()<2797 ? jQuery('.frame').scrollLeft()+50 : jQuery('.frame').scrollLeft();
+				jQuery('.frame').scrollLeft(right);
+			}
+
+		},1000/25);
+
+	}).mouseup(function(event) {
+
+		clearInterval(s); jQuery('.frame').dequeue();
+
+		jQuery(this).parent('div').find('li').each(function(){
+
+			var letter = (jQuery(this).html().toUpperCase() != '#') ? jQuery(this).html().toUpperCase() : 'hash';
+			var target = jQuery("#"+letter);
+
+			if(target.offset().left > (jQuery('.frame').width()/100*35) && target.offset().left < (jQuery('.frame').width()/100*65))
+				jQuery(this).addClass('active').siblings().removeClass('active').dequeue();
+
+		});
 
 	});
 
 	jQuery('nav ul li').click(function() {
 
 		var letter = (jQuery(this).html().toUpperCase() != '#') ? jQuery(this).html().toUpperCase() : 'hash';
-				var target = jQuery("#"+letter);
-			
-				if (target) {
-					jQuery(this).addClass('active').siblings().removeClass('active');
-						jQuery('.frame').animate({ scrollLeft: (target.position().left + (target.width()/2) - (jQuery('.frame').width()/2)) }, 500).dequeue();
-				}
+		var target = jQuery("#"+letter);
+	
+		if (target) {
+			jQuery(this).addClass('active').siblings().removeClass('active');
+				jQuery('.frame').animate({ scrollLeft: (target.position().left + (target.width()/2) - (jQuery('.frame').width()/2)) }, 500).dequeue();
+		}
 			
 	});
 
