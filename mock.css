@@ -6,12 +6,13 @@ html {
   width: 100%;
 }
 .fakeNav {
-  background: url("assets/img/nav.jpg") no-repeat;
+  background: #fff url("assets/img/nav.jpg") no-repeat;
   background-position: center top;
   height: 80px;
   width: 100%;
   position: fixed;
   z-index: 9999999;
+  border-bottom: 2px solid #f0537a;
 }
 .center {
   margin: 0 auto;
