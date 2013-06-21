@@ -106,6 +106,36 @@ jQuery(document).ready(function(){
 
 	});
 
+	var updateList = function(){
+
+		jQuery('.wrapper nav ul').find('li').each(function(){
+
+			console.log(this)
+
+			var letter = (jQuery(this).html().toUpperCase() != '#') ? jQuery(this).html().toUpperCase() : 'hash';
+			var target = jQuery("#"+letter);
+
+			if(target.offset().left > (jQuery('.frame').width()/100*45) && target.offset().left < (jQuery('.frame').width()/100*55))
+				jQuery(this).addClass('active').siblings().removeClass('active').dequeue();
+
+		});
+
+	}
+
+	jQuery('.frame').bind('mousewheel', function (e) {
+
+	    if(e.originalEvent.wheelDeltaX > 0) {
+	    	var left = jQuery('.frame').scrollLeft()>0 ? jQuery('.frame').scrollLeft()-25 : jQuery('.frame').scrollLeft();
+			jQuery('.frame').scrollLeft(left);
+		} else {
+			var right = jQuery('.frame').scrollLeft()<2797 ? jQuery('.frame').scrollLeft()+25 : jQuery('.frame').scrollLeft();
+			jQuery('.frame').scrollLeft(right);
+		}
+
+		updateList();
+
+	});
+
 	jQuery('.wrapper div').mousedown(function() {
 
 		var myself = jQuery(this);
@@ -122,21 +152,13 @@ jQuery(document).ready(function(){
 				jQuery('.frame').scrollLeft(right);
 			}
 
+			updateList();
+
 		},1000/25);
 
 	}).mouseup(function(event) {
 
 		clearInterval(s); jQuery('.frame').dequeue();
-
-		jQuery(this).parent('div').find('li').each(function(){
-
-			var letter = (jQuery(this).html().toUpperCase() != '#') ? jQuery(this).html().toUpperCase() : 'hash';
-			var target = jQuery("#"+letter);
-
-			if(target.offset().left > (jQuery('.frame').width()/100*35) && target.offset().left < (jQuery('.frame').width()/100*65))
-				jQuery(this).addClass('active').siblings().removeClass('active').dequeue();
-
-		});
 
 	});
 
