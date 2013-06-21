@@ -2,6 +2,8 @@ jQuery(document).ready(function(){
 
 	var x,y,s;
 
+	jQuery('.frame').animate({ scrollLeft: 900 }, 1500, 'linear', function(){ jQuery('ul#a').addClass('active'); });
+
 	jQuery('#tweets').find('div').each(function(){
 		jQuery(this).children().contents().find('body div.media a img').css('width','auto').css('height','200px');
 		jQuery(this).children().contents().find('body div.media iframe').css('width','auto').css('height','200px');
@@ -109,8 +111,6 @@ jQuery(document).ready(function(){
 	var updateList = function(){
 
 		jQuery('.wrapper nav ul').find('li').each(function(){
-
-			console.log(this)
 
 			var letter = (jQuery(this).html().toUpperCase() != '#') ? jQuery(this).html().toUpperCase() : 'hash';
 			var target = jQuery("#"+letter);
