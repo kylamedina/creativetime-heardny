@@ -1,0 +1,49 @@
+@import url("http://fonts.googleapis.com/css?family=PT+Mono");
+body,
+html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.fakeNav {
+  background: url("assets/img/nav.jpg") no-repeat;
+  background-position: center top;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 9999999;
+}
+.center {
+  margin: 0 auto;
+}
+iframe {
+  position: relative;
+  top: 80px;
+  margin: 0 auto;
+  width: 100%;
+  height: 540px;
+  border: none;
+}
+iframe body,
+iframe .frame {
+  width: 100% !important;
+}
+.body {
+  background: url("assets/img/body.jpg") repeat-x;
+  background-position: center 76px;
+  height: 1011px;
+  width: 100%;
+}
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  cursor: pointer;
+}
+::-webkit-scrollbar-track {
+  background-color: #ddd;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #f0537a;
+}

@@ -7,14 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <script type="text/javascript" src="assets/js/head.min.js"></script>
+    <style>
+      body, .frame, .overlay, #overlay {width: 100% !important}
+      .wrapper {}
+      
+    </style>
   </head>
-  <body>
+  <body style="width:100%">
     <div class="fakeNav"></div>
     <div id="overlay" class="overlay">	
       <div class="meter"><span></span></div><span id="popup"></span>
       <button id="close">X</button>
     </div>
-    <div class="frame">
+    <div style="width:100%" class="frame">
       <div class="creativetime">
         <div class="grid"><span id="hash">
             <object data="assets/img/hash/letter_hash.svg" type="image/svg+xml"></object></span><span id="I">

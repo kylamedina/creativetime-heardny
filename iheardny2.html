@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="mock2.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <script type="text/javascript" src="assets/js/head.min.js"></script>
+  </head>
+  <body>
+    <div class="fakeNav"></div>
+    <div class="center">
+      <iframe src="index2.html"></iframe>
+    </div>
+    <div class="body"></div>
+  </body>
+  <script>
+    head.js(
+    {jQuery: "http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
+    , {custom: "assets/js/js.js"}
+    , {transit: "assets/js/jquery.transit.js"}
+    , {twtter: "http://platform.twitter.com/widgets.js"}
+    , {vine: "http://platform.vine.co/static/scripts/embed.js"}
+    , function() {
+     console.log("Head JS Finished");
+    });
+  </script>
+</html>
