@@ -2,7 +2,7 @@ jQuery(document).ready(function(){
 
 	var x,y,s;
 
-	jQuery('.frame').animate({ scrollLeft: 900 }, 1500, 'linear', function(){ jQuery('ul#a').addClass('active'); });
+	jQuery('.frame').animate({ scrollLeft: 900 }, 1500);
 
 	jQuery('#tweets').find('div').each(function(){
 		jQuery(this).children().contents().find('body div.media a img').css('width','auto').css('height','200px');
