@@ -232,36 +232,36 @@ arrows()
 		max-height 250px !important
 		max-width auto !important
 
-#popup:hover + .user
+#popup:hover .user, .user:hover
 	opacity 1
 	transition all 0.3s
 
 .user
-	opacity 0
-	transition all 0.3s
-	width 100%
 	position absolute
-	top 34px
-	.center
-		background-color rgba(0,0,0,0.2)
-		border-radius 4px
-		padding 12px 0
-		width 400px
-		margin 0 auto
-		> div
-			display inline-block
-			margin 0 auto
+	right -210px
 .profilepic
-	padding-left 20px
-	width 50px
-	height 50px
-	display inline-block
+	width 65px
+	height 65px
+
 .username
-	font-family $sans-serif
+	font-family $condensed
+	font-weight 700
 	text-decoration none
-	padding-left 10px
+	padding-top 6px
 	font-size 16px
-	display inline-block
-	width 300px
+	width 200px
+	-ms-word-break: break-all;
+	word-break: break-all;
+
+	// Non standard for webkit
+	word-break: break-word;
+
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
 	a
 		color white
+		text-decoration none
+		text-transform uppercase
+		&:hover
+			color pink !important
