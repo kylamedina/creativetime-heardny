@@ -842,6 +842,30 @@ nav li {
 .username a:hover {
   color: #f0537a !important;
 }
+.time {
+  font-family: 'Helvetica Neue', Helvetica, Arial, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin-top: 6px;
+}
+.time a {
+  text-decoration: none !important;
+  color: #fff !important;
+  border-bottom: none;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.time a:hover {
+  color: #f0537a !important;
+  border-bottom: 1px solid #f0537a;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
 @-moz-keyframes bounceInDown {
   0% {
     filter: alpha(opacity = 0);

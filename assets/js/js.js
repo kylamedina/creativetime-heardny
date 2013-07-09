@@ -44,9 +44,9 @@ jQuery(document).ready(function(){
 				
 				else
 					if(this.getAttribute('data-insta'))
-						var img = '<div class="user"><div class="center"><div class="profilepic"><img src="assets/img/' + this.parentNode.getAttribute('id') + '/profile/' + this.getAttribute('data-insta') + '.jpg"></div><div class="username"><a href="http://instagram.com/'+ this.getAttribute('data-insta') + ' " target="_blank">' + this.getAttribute('data-insta') + '</a></div></div></div><img class="scaled-img" src="assets/img/'+this.parentNode.getAttribute('id')+'/big/'+i+'.jpg">';
+						var img = '<div class="user"><div class="center"><div class="profilepic"><img src="assets/img/' + this.parentNode.getAttribute('id') + '/profile/' + this.getAttribute('data-insta') + '.jpg"></div><div class="username"><a href="http://instagram.com/'+ this.getAttribute('data-insta') + ' " target="_blank">' + this.getAttribute('data-insta') + '</a></div><div class="time"><a href="'+ this.getAttribute('data-status') + ' " target="_blank">' + this.getAttribute('data-time') + '</a></div></div></div><img class="scaled-img" src="assets/img/'+this.parentNode.getAttribute('id')+'/big/'+i+'.jpg">';
 					else						
-						var img = '<div class="user"><div class="center"><div class="profilepic"><img src="assets/img/' + this.parentNode.getAttribute('id') + '/profile/' + this.getAttribute('data-twitter') + '.jpg"></div><div class="username"><a href="http://twitter.com/'+ this.getAttribute('data-twitter') + ' " target="_blank">@' + this.getAttribute('data-twitter') + '</a></div></div></div><img class="scaled-img" src="assets/img/'+this.parentNode.getAttribute('id')+'/big/'+i+'.jpg">';
+						var img = '<div class="user"><div class="center"><div class="profilepic"><img src="assets/img/' + this.parentNode.getAttribute('id') + '/profile/' + this.getAttribute('data-twitter') + '.jpg"></div><div class="username"><a href="http://twitter.com/'+ this.getAttribute('data-twitter') + ' " target="_blank">@' + this.getAttribute('data-twitter') + '</a></div><div class="time"><a href="'+ this.getAttribute('data-status') + ' " target="_blank">' + this.getAttribute('data-time') + '</a></div></div></div><img class="scaled-img" src="assets/img/'+this.parentNode.getAttribute('id')+'/big/'+i+'.jpg">';
 
 				if(jQuery('#overlay').hasClass('overlay')) 
 					jQuery('#overlay')
