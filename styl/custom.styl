@@ -104,15 +104,16 @@ body
 .grid
 	clearfix()
 	span
-		width 333px
+		width 11%
 		display inline-block
 	.vine, .twitter, .scaled-img
 		display block
 
 span
 	&#I
-		width 133px
-
+		width 4%
+	&#A
+		width 13%
 
 
 
@@ -170,7 +171,8 @@ arrows()
 	position:absolute;
 	z-index:999;
 #popup  
-	position:absolute;
+	position: fixed
+	top -50px
 	transform: scale(0,0);
 	-ms-transform: scale(0,0);
 	-webkit-transform: scale(0,0);
@@ -185,6 +187,9 @@ arrows()
 	border-radius: 3px; 
 #close
 	pointer-events:auto;
+	position fixed
+	top 5px
+	left 5px
 
 .scaled-img
 	width auto
@@ -197,10 +202,9 @@ arrows()
 
 .meter
 	height: 10px
-	width 30%
-	left 35% 
-	position: absolute
-	top 220px
+	position: fixed
+	width 400px
+	margin-top -100px
 	background: #fff
 	border-radius: 25px
 	padding: 2px
@@ -216,10 +220,11 @@ arrows()
 		animation-iteration-count infinite
 
 #tweets
+	height 0 !important
 	display:block;
-	position:absolute;
+	position: fixed
 	z-index:1000;
-	top:0;
+	top: -50px
 	opacity:0;
 	pointer-events none
 	&.importantRule
@@ -278,3 +283,11 @@ arrows()
 			color pink !important
 			border-bottom 1px solid pink
 			transition all 0.3s
+
+.fullscreen
+	p
+		text-align center
+		font-size 11px
+		text-transform uppercase
+		a
+			text-decoration none

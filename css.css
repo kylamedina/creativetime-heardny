@@ -586,7 +586,7 @@ body {
   visibility: hidden;
 }
 .grid span {
-  width: 333px;
+  width: 11%;
   display: inline-block;
 }
 .grid .vine,
@@ -595,7 +595,10 @@ body {
   display: block;
 }
 span#I {
-  width: 133px;
+  width: 4%;
+}
+span#A {
+  width: 13%;
 }
 nav {
   display: inline-block;
@@ -694,7 +697,8 @@ nav li {
   z-index: 999;
 }
 #popup {
-  position: absolute;
+  position: fixed;
+  top: -50px;
   -moz-transform: scale(0, 0);
   -webkit-transform: scale(0, 0);
   -o-transform: scale(0, 0);
@@ -722,6 +726,9 @@ nav li {
 }
 #close {
   pointer-events: auto;
+  position: fixed;
+  top: 5px;
+  left: 5px;
 }
 .scaled-img {
   width: auto;
@@ -735,10 +742,9 @@ nav li {
 }
 .meter {
   height: 10px;
-  width: 30%;
-  left: 35%;
-  position: absolute;
-  top: 220px;
+  position: fixed;
+  width: 400px;
+  margin-top: -100px;
   background: #fff;
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;
@@ -775,10 +781,11 @@ nav li {
   animation-iteration-count: infinite;
 }
 #tweets {
+  height: 0 !important;
   display: block;
-  position: absolute;
+  position: fixed;
   z-index: 1000;
-  top: 0;
+  top: -50px;
   filter: alpha(opacity = 0);
   opacity: 0;
   pointer-events: none;
@@ -865,6 +872,14 @@ nav li {
   -o-transition: all 0.3s;
   -ms-transition: all 0.3s;
   transition: all 0.3s;
+}
+.fullscreen p {
+  text-align: center;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.fullscreen p a {
+  text-decoration: none;
 }
 @-moz-keyframes bounceInDown {
   0% {
